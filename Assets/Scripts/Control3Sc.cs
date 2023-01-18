@@ -15,6 +15,11 @@ public class Control3Sc : MonoBehaviour
     private Transform playerCamera;
     private float maxSpeedWithoutNitro;
     private float maxSpeedWithNitro;
+
+    private AudioSource source;
+
+    [SerializeField]
+    private AudioClip jumpSound;
    
 
      void Start(){
@@ -23,6 +28,7 @@ public class Control3Sc : MonoBehaviour
         InitCamera();
         maxSpeedWithNitro = _maxSpeed * 10;
         maxSpeedWithoutNitro = _maxSpeed;
+        source = GetComponent<AudioSource>();
     }
 
     public void InitCamera(){
@@ -75,6 +81,10 @@ public class Control3Sc : MonoBehaviour
         }
         
         if(Input.GetAxisRaw("P1Jump") != 0 && playerSc.onGround){
+            source.clip = jumpSound;
+            source.volume = 0.5f;
+            source.loop = false;
+            source.Play();
             rb.AddForce(Vector3.up * _jump);
         }
     }
@@ -94,6 +104,10 @@ public class Control3Sc : MonoBehaviour
         }
         
         if(Input.GetAxisRaw("P2Jump") != 0 && playerSc.onGround){
+            source.clip = jumpSound;
+            source.volume = 0.5f;
+            source.loop = false;
+            source.Play();
             rb.AddForce(Vector3.up * _jump);
         }
     }

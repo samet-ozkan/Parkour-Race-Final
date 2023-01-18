@@ -16,9 +16,15 @@ public class Control2Sc : MonoBehaviour
     public Transform cubeDoor;
     private bool fireOnce = true;
 
+    private AudioSource source;
+
+    [SerializeField]
+    private AudioClip fireSound;
+
      void Start(){
         rb = GetComponent<Rigidbody>();
         playerSc = GetComponent<PlayerSc>();
+        source = GetComponent<AudioSource>();
     }
 
     void Update(){
@@ -67,6 +73,10 @@ public class Control2Sc : MonoBehaviour
 
     void P1FireControl(){
         if(Input.GetAxisRaw("P1Skill") > 0 && fireOnce){
+            source.clip = fireSound;
+            source.volume = 0.2f;
+            source.loop = false;
+            source.Play();
             fireOnce = false;
             GameObject bulletRef = Instantiate(bullet, location.transform.position, Quaternion.identity) as GameObject;
             Vector3 forward = location.transform.forward;
@@ -94,6 +104,10 @@ public class Control2Sc : MonoBehaviour
 
     void P2FireControl(){
         if(Input.GetAxisRaw("P2Skill") > 0 && fireOnce){
+            source.clip = fireSound;
+            source.volume = 0.2f;
+            source.loop = false;
+            source.Play();
             fireOnce = false;
             GameObject bulletRef = Instantiate(bullet, location.transform.position, Quaternion.identity) as GameObject;
             Vector3 forward = location.transform.forward;

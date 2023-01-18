@@ -39,6 +39,7 @@ public class SkillSc : MonoBehaviour
     {
         if((gameObject.name == "P1" && Input.GetAxisRaw("P1Skill") == 1 || gameObject.name == "P2" && Input.GetAxisRaw("P2Skill") == 1) && hasSkill){
             source.clip = soundEffect;
+            source.volume = 0.8f;
             source.loop = false;
             switch(skill){
                 case "RandomForce":

@@ -22,6 +22,7 @@ public class BackgroundMusicSc : MonoBehaviour
             source = this.gameObject.GetComponent<AudioSource>();
             if(music != null){
                 source.clip = music;
+                source.volume = 0.8f;
                 source.loop = true;
                 source.Play();
             }

@@ -3648,6 +3648,7 @@ MonoBehaviour:
   _speed: 150
   _jump: 275
   _maxSpeed: 6
+  jumpSound: {fileID: 8300000, guid: 0ccf179a9785e954fa1d9544a4929fa5, type: 3}
 --- !u!114 &381350896
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3666,6 +3667,7 @@ MonoBehaviour:
   bullet: {fileID: 2940491934074519369, guid: c82b6759c9912cf429009b64788708a3, type: 3}
   location: {fileID: 864688670}
   cubeDoor: {fileID: 385865102}
+  fireSound: {fileID: 8300000, guid: 1da7d99f8fe42da40ad11fd58e8017e9, type: 3}
 --- !u!114 &381350898
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11318,7 +11320,7 @@ GameObject:
   - component: {fileID: 1124126189}
   - component: {fileID: 1124126188}
   m_Layer: 0
-  m_Name: SpawnPoint
+  m_Name: SpawnPointSpeed
   m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13156,6 +13158,7 @@ MonoBehaviour:
   _speed: 150
   _jump: 275
   _maxSpeed: 6
+  jumpSound: {fileID: 8300000, guid: 0ccf179a9785e954fa1d9544a4929fa5, type: 3}
 --- !u!114 &1319746609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13174,6 +13177,7 @@ MonoBehaviour:
   bullet: {fileID: 2940491934074519369, guid: c82b6759c9912cf429009b64788708a3, type: 3}
   location: {fileID: 874992098}
   cubeDoor: {fileID: 901911406}
+  fireSound: {fileID: 8300000, guid: 1da7d99f8fe42da40ad11fd58e8017e9, type: 3}
 --- !u!114 &1319746611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21107,7 +21111,7 @@ GameObject:
   - component: {fileID: 2123036756}
   - component: {fileID: 2123036755}
   m_Layer: 0
-  m_Name: SpawnPoint
+  m_Name: SpawnPointSpeed
   m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
