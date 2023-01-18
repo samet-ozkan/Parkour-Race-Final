@@ -59,10 +59,12 @@ Puan durumuna göre kazanan oyuncu belirlenir. Puan durumu eşit ise oyun berabe
 <p>
 <img src="Screenshots/1.png" width="325">
 <img src="Screenshots/2.png" width="325">
-<img src="Screenshots/3.png" width="325">
 </p>
 <p>
+<img src="Screenshots/3.png" width="325">
 <img src="Screenshots/5.png" width="325">
+</p>
+<p>
 <img src="Screenshots/6.png" width="325">
 <img src="Screenshots/7.png" width="325">
 </p>
